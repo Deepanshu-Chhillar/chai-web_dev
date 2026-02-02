@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms one</title>
+    <style>
+        body {
+            background-color: #414141;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+   <h1>Forms in html</h1> 
+   <form action="url" method="GET" accept-charset="utf-16" autocomplete="off" enctype="" target="">
+    <label for="fname">First Name:</label><br>
+        <input type="text" placeholder="first name" name="" value="" id="fname"><br>
+
+        <input type="password" name="" id="">
+        <input type="week" name="" id="">
+        <input type="reset" value="reset">
+       
+        <select name="editors" id="" multiple>
+            <option value="vscode">VS Code</option>
+            <option value="Atom">Atom</option>
+        </select>
+        <select name="language" id="">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+        </select>
+
+        <input list="editors" name="editor">        <!--list and datalist 95% not in use but good to know for knowledge-->
+        <datalist id="editors">
+            <option value="VS Code">
+            <option value="Atom">
+            <option value="Sublime Text"></option>
+
+        <input type="hidden" name="">                <!-- Very useful in backend specially in DJango-->
+
+        <button type="submit">Submit</button>
+   </form>
+</body>
+</html>
+
+<!-- Check for radio and Range under input section as these are also useful-->
+
+
