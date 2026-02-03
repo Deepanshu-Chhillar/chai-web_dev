@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Ways to target css for different forms
+tag: h1{}
+id: #{}
+class: .{} */
+
+#a{                          
+    color:aqua           /* here we are targeting id section under paragraph section (p)   can also use .a{}     id and tag dono se target kar sakte hai  */
+}
+
+#main{
+    width: 100px;
+    height:20px;
+    margin: 20px;
+    padding: 18px;
+    background-color: red;
+}
+
+
+#main{
+    width: 100%;
+    height: 100px;
+    background-image: url(https://pin.it/4jtGFCfGy);
+    background-size: cover;
+    background-position: center;
+}
+
+#car1{
+    position: absolute;
+    top: 5%;
+    left: 0.3%;
+    width: 100px;
+    height: 120px;
+    background-color: aqua;
+    
+}
+#car2{
+    position: static;
+    width: 110px;
+    height: 90px;
+    background-color: violet;
+
+}
+#car3{
+    position: static;
+    width: 130px;
+    height: 110px;
+    background-color: green;
+
+}
+
+#box{
+    position: relative;
+    width: 300px;
+    height:300px;
+    background-color: red;
+}
+#chhota{
+    position: absolute;
+    left: 40%;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+#box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+}
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+#box2{
+    width: 130px;
+    height: 110px;
+    background-color: orange;
+}
+#box3{
+    width: 120px;
+    height: 99px;
+    background-color: purple;
+}
