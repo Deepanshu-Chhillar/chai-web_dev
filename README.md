@@ -7,3 +7,4 @@ A Learning sample//Practice code of web dev MERN STACK..
                   #commit-2.) added media work, completed HTML  ( NXT trgt CSS and continue further)
 3 Feb 2026(8:20) #commit-1.) added the CSS work from a different prespective...
 
+6 Feb 2026(9:00) #commit-1.} added a part of css project after doing offline work of 2 prev. days 
