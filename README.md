@@ -8,3 +8,5 @@ A Learning sample//Practice code of web dev MERN STACK..
 3 Feb 2026(8:20) #commit-1.) added the CSS work from a different prespective...
 
 6 Feb 2026(9:00) #commit-1.} added a part of css project after doing offline work of 2 prev. days 
+
+23Feb 2026(9:10) #commit-1.) added js Dom initial learnings -- after a long work/break - preparing for hackhathon
