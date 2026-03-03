@@ -12,3 +12,6 @@ A Learning sample//Practice code of web dev MERN STACK..
 23Feb 2026(9:10) #commit-1.) added js Dom initial learnings -- after a long work/break - preparing for hackhathon
 
 27feb 2026  #commit-1.) added 2nd dom learnings
+
+3March 2026 #commit-1.) adding last 4th part of dom lernings--getting breaked consistency for coding becoz of clg assignments, exams, hackhathon and startup work all at one time.
+
