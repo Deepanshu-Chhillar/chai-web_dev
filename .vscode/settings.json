@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/Chai-aur-HTML/linktags.html"
+    "livePreview.defaultPreviewPath": "/Chai-aur-HTML/linktags.html",
+    "docwriter.style": "Auto-detect"
 }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414141; color: #ffffff">
+    <h2>Amazing images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="head image" src="https://www.w3schools.com/images/w3schools_green.jpg" alt="photoshop"></li>
+            <li><img width="200px" id="bird" src="https://images.pexels.com/photos/36296577/pexels-photo-36296577.jpeg" alt=""></li>
+            <li><img width="200px" id="scenery" src="https://images.pexels.com/photos/34481197/pexels-photo-34481197.jpeg" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://www.google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>                                      // Event handler
+//     // document.getElementById('owl').onclick = function(){
+//     //   alert("owl clicked")})
+// //Best way to do use nowadays
+// document.getElementById('bird').addEventListener('click', function(){
+//     alert("bird clicked using event listener")
+// })
+// //Event Object
+// document.getElementById('bird').addEventListner('click', function(e){
+//     console.log(e);
+// }, false)
+// //**************   Important topics to learn for event object   *****************//
+// //type, timestamp, defaultPrevented, target, toElement, srcElement, currentTarget, 
+// // clintx, clienty, pageX, pageY, screenX, screenY, tiltx, tilty
+// // altkey, ctrlkey, shiftkey, keyCode
+
+// document.getElementById('google').addEventListener
+// ('click', function(e){
+//     e.preventDefault()
+//     e.stopPropagation()
+//     console.log("google Clicked");
+// }, false)
+
+//// Now we gonna do a basic proj in it we will click on images available on page and they should got invisible
+    document.querySelector('#images').addEventListener
+    ('click', function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+     //   let removeIt = e.target.parentNode
+   //     removeIt.remove() //Problem here...?== if we click an li all coontent got removed as in parent node we get the parent of li which is ul and then we say remove ul so whole li got removed too,, so we use if else to counter this prob.
+        //2nd Approch: 
+       // removeIt.parentNode.removeChild(removeIt)
+    })
+
+
+</script>
+</html>
