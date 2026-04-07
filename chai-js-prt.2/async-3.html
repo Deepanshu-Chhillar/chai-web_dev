@@ -1,0 +1,34 @@
+<!--PROJECT : Making a bg color changer by toggeling start and stop./-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color-changer</title>
+</head>
+<body>
+    <h1>Color Changer with chai and JS</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let hex = "0123456789abcdef";
+    const changeColor = function(){
+        let color = "#";
+        for(let i=0; i<6; i++){
+            color += hex[Math.floor(Math.random() * 16)];
+        }
+        document.body.style.backgroundColor = color;
+    }
+    let intervalId;
+    document.querySelector('#start').addEventListener('click', function(){
+        intervalId = setInterval(changeColor, 2000);
+        console.log("Started");
+    })
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(intervalId);
+        console.log("Stopped");
+    })
+</script>
+</html>
