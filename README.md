@@ -15,3 +15,5 @@ A Learning sample//Practice code of web dev MERN STACK..
 
 3March 2026 #commit-1.) adding last 4th part of dom lernings--getting breaked consistency for coding becoz of clg assignments, exams, hackhathon and startup work all at one time.
 
+7 APR -- Added the async and event files after a long break doing startup work in this period 
+     
