@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color-changer</title>
 </head>
-<body>
+<body style="background-color: #414141; color: #ffffff">
     <h1>Color Changer with chai and JS</h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
@@ -23,12 +23,13 @@
     }
     let intervalId;
     document.querySelector('#start').addEventListener('click', function(){
-        intervalId = setInterval(changeColor, 2000);
-        console.log("Started");
+        if (!intervalId){
+            intervalId = setInterval(changeColor, 2000);
+        }
     })
     document.querySelector('#stop').addEventListener('click', function(){
         clearInterval(intervalId);
-        console.log("Stopped");
+        intervalId = null;
     })
 </script>
 </html>

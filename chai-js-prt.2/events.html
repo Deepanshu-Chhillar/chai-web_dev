@@ -10,36 +10,64 @@
     <div>
         <ul id="images">
             <li><img width="200px" id="head image" src="https://www.w3schools.com/images/w3schools_green.jpg" alt="photoshop"></li>
-            <li><img width="200px" id="bird" src="https://images.pexels.com/photos/36296577/pexels-photo-36296577.jpeg" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/36296577/pexels-photo-36296577.jpeg" alt=""></li>
             <li><img width="200px" id="scenery" src="https://images.pexels.com/photos/34481197/pexels-photo-34481197.jpeg" alt=""></li>
             <li><a style="color: aliceblue;" href="https://www.google.com" id="google">Google</a></li>
         </ul>
     </div>
 </body>
-<script>                                      // Event handler
-//     // document.getElementById('owl').onclick = function(){
-//     //   alert("owl clicked")})
+<script>                                
+// *****************n Event handler  *****************//
+document.getElementById('owl').onclick = function(){
+    alert("owl clicked")
+}
 // //Best way to do use nowadays
-// document.getElementById('bird').addEventListener('click', function(){
-//     alert("bird clicked using event listener")
-// })
-// //Event Object
-// document.getElementById('bird').addEventListner('click', function(e){
-//     console.log(e);
-// }, false)
+document.getElementById('owl').addEventListener('click', function(){
+    alert("owl clicked using event listener")
+})
+
+// **************   Event Object   *****************//
+
+document.getElementById('owl').addEventListener('click', function(e){
+    console.log(e);
+}, false)
 // //**************   Important topics to learn for event object   *****************//
 // //type, timestamp, defaultPrevented, target, toElement, srcElement, currentTarget, 
 // // clintx, clienty, pageX, pageY, screenX, screenY, tiltx, tilty
 // // altkey, ctrlkey, shiftkey, keyCode
 
-// document.getElementById('google').addEventListener
-// ('click', function(e){
-//     e.preventDefault()
-//     e.stopPropagation()
-//     console.log("google Clicked");
-// }, false)
+// ********   Event Propagation   *****************//--> Has Event bubbling & Event Capturing
 
-//// Now we gonna do a basic proj in it we will click on images available on page and they should got invisible
+// 2 Examples on event bubbling
+document.getElementById('images').addEventListener('click', function(e){
+    console.log("Clicked indside the ul");
+}, false)
+document.getElementById('owl').addEventListener('click', function(e){
+    console.log("owl clicked");
+    e.stopPropagation() //it stops the event bubbling so when we click on owl we get print: owl clicked but not Clicked indside the ul because we stop the event bubbling here
+}, false)
+//  these 2 ex. gives us o/p:- kisi bhi 3 image pe click karo (excluding owl) we get print: Clicked indside the ul
+// but if we click on owl we get print: owl clicked and Clicked indside the ul because of event bubbling as when we click on owl first event is fired on owl and then it bubbles up to parent element which is ul, bubling goes from child to parent(niche se uper) and capturing goes from parent to child (upe se niche)
+
+// example on event capturing
+document.getElementById('images').addEventListener('click', function(e){
+    console.log("Clicked indside the ul");
+}, true)
+document.getElementById('owl').addEventListener('click', function(e){
+    console.log("owl clicked");
+}, true) //capturing goes from parent to child (upe se niche)
+
+
+
+document.getElementById('google').addEventListener
+('click', function(e){
+    e.preventDefault()   //it prevents the default behaviour of google link which is to open google.com when we click on it, but with this code we can stop it from opening google.com and we can do whatever we want in this function, here we just print google clicked in console
+    e.stopPropagation()
+    console.log("google Clicked");
+}, false)
+
+
+//// Now we gonna do a basic proj in it we will click on images available on page and they will disappear.
     document.querySelector('#images').addEventListener
     ('click', function(e){
         console.log(e.target.tagName);
