@@ -22,3 +22,5 @@ A Learning sample//Practice code of web dev MERN STACK..
 16 June -- Added 3-5 Minor Projects of html+css+js after a while from taking time from startup, clg, house-works..
         added Events, APi Req. file of knowledge i've learned.
         added async. files with its minor projects, with this finished with events, async, api part of JS
+
+June -- Added Promises file, learned promise-now i am kinda promise runner.        
