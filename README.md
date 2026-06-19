@@ -26,6 +26,6 @@ A Learning sample//Practice code of web dev MERN STACK..
 17 June -- Added Promises file, learned promise-now i am kinda promise runner.        
 
 19 june -- Added ooJS file learnings
-
+           added classes and prototype + calls learnings in JS
 
 
