@@ -23,4 +23,9 @@ A Learning sample//Practice code of web dev MERN STACK..
         added Events, APi Req. file of knowledge i've learned.
         added async. files with its minor projects, with this finished with events, async, api part of JS
 
-June -- Added Promises file, learned promise-now i am kinda promise runner.        
+17 June -- Added Promises file, learned promise-now i am kinda promise runner.        
+
+19 june -- Added ooJS file learnings
+
+
+
