@@ -28,4 +28,4 @@ A Learning sample//Practice code of web dev MERN STACK..
 19 june -- Added ooJS file learnings
            added classes and prototype + calls learnings in JS
 
-
+Completed with js basic part of it to mid++ level in it just need to practice more and to do 2-3 minor topics.
